@@ -108,7 +108,7 @@ Open your browser at `http://127.0.0.1:5000`
 3. **Recursive multi-day forecast**: each prediction feeds back as input for the next step, simulating real deployment conditions where future values are never available in advance.
 4. **Holiday features**: reconstructed from `holidays.csv` for any future date, allowing the model to account for National, Regional, and Local holidays beyond the training period.
 
-> **Note on MAE**: the one-step-ahead MAE reported in the notebooks (95.26) uses real lag values at each step. The recursive MAE in the app (~101) uses predicted values as lags — a slightly higher but more realistic estimate of production performance.
+> **Note on MAE**: the one-step-ahead MAE reported in the notebooks (95.26) uses real lag values at each step. The recursive MAE in the app (~100) uses predicted values as lags, a slightly higher but more realistic estimate of production performance.
 
 ---
 
