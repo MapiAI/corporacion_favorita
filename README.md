@@ -23,19 +23,18 @@ A time series forecasting project that predicts daily unit sales for Corporació
 
 ```
 corporacion_favorita/
-├── champion_model.pkl              # Trained XGBoost champion model
 ├── requirements.txt                # Python dependencies
-├── requirements_streamlit.txt      # Streamlit-specific dependencies
 ├── mlflow.db                       # MLflow experiment tracking (SQLite)
 ├── README.md
 ├── app/
 │   ├── __init__.py
 │   ├── config.py                   # Centralized paths and constants
-│   ├── app.py                      # Validation app (forecast vs actuals, metrics)
+│   ├── validation_app.py           # Validation app (forecast vs actuals, metrics)
 │   └── main.py                     # Deployment app (date picker, pure forecast)
 ├── model/
 │   ├── __init__.py
 │   └── model_utils.py              # Model loading and recursive forecasting
+│   └── champion_model.pkl          # Trained XGBoost champion model
 ├── data/
 │   ├── __init__.py
 │   ├── data_utils.py               # Data loading and feature engineering
@@ -47,6 +46,8 @@ corporacion_favorita/
 │   └── results_statistical.csv     # Statistical models evaluation results
 ├── assets/
 │   └── icon_favicon.png            # Browser favicon
+│   └── forecast.png                # Forecast image
+│   └── historical.png              # Historical sales image
 └── notebooks/
     ├── 01_favorita_sales_forecasting_data_preparation.ipynb
     ├── 02_statistical_models.ipynb
