@@ -1,6 +1,6 @@
 # Corporación Favorita — Sales Forecasting
 
-A time series forecasting project that predicts daily unit sales for Corporación Favorita grocery stores using classical statistical models, machine learning, and deep learning — deployed as an interactive Streamlit app.
+A time series forecasting project that predicts daily unit sales for Corporación Favorita grocery stores using classical statistical models, machine learning, and deep learning, deployed as an interactive Streamlit app.
 
 ---
 
@@ -46,7 +46,7 @@ corporacion_favorita/
 │   ├── stores.csv                  # Store metadata
 │   └── results_statistical.csv     # Statistical models evaluation results
 ├── assets/
-│   └── icon_favicon.png            # Browser favicon (red mezzelune)
+│   └── icon_favicon.png            # Browser favicon
 └── notebooks/
     ├── 01_favorita_sales_forecasting_data_preparation.ipynb
     ├── 02_statistical_models.ipynb
@@ -59,7 +59,7 @@ corporacion_favorita/
 
 - Python 3.10
 - macOS / Linux (Windows not tested)
-- No GPU required (LSTM excluded from local execution — see note below)
+- No GPU required (LSTM excluded from local execution: see note below)
 
 Install all dependencies:
 
@@ -164,5 +164,5 @@ Training data covers **2013 only** (single aggregated daily time series, 454 obs
 ## Author
 
 **Maria Petralia**  
-MasterSchool — Data Science Program  
+MSIT — Data Science Program  
 March 2026
