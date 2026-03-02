@@ -103,10 +103,10 @@ Open your browser at `http://127.0.0.1:5000`
 
 ## How Predictions Work
 
-1. **Feature engineering** — lag features (1, 2, 3, 7, 14 days), rolling statistics (7/14/28-day mean and std), cyclical day-of-week encoding (sin/cos), and calendar-based holiday indicators are computed from the sales history.
-2. **Single-day forecast** — the model predicts the next day using the engineered features from the last known date.
-3. **Recursive multi-day forecast** — each prediction feeds back as input for the next step, simulating real deployment conditions where future values are never available in advance.
-4. **Holiday features** — reconstructed from `holidays.csv` for any future date, allowing the model to account for National, Regional, and Local holidays beyond the training period.
+1. **Feature engineering**: lag features (1, 2, 3, 7, 14 days), rolling statistics (7/14/28-day mean and std), cyclical day-of-week encoding (sin/cos), and calendar-based holiday indicators are computed from the sales history.
+2. **Single-day forecast**: the model predicts the next day using the engineered features from the last known date.
+3. **Recursive multi-day forecast**: each prediction feeds back as input for the next step, simulating real deployment conditions where future values are never available in advance.
+4. **Holiday features**: reconstructed from `holidays.csv` for any future date, allowing the model to account for National, Regional, and Local holidays beyond the training period.
 
 > **Note on MAE**: the one-step-ahead MAE reported in the notebooks (95.26) uses real lag values at each step. The recursive MAE in the app (~101) uses predicted values as lags — a slightly higher but more realistic estimate of production performance.
 
