@@ -1,0 +1,10 @@
+# Environment
+__pycache__/
+*.pyc
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# MLflow (locale, machine-specific)
+mlflow.db
