@@ -22,7 +22,7 @@ st.set_page_config(
 st.markdown("""
     <style>
     .block-container {
-        padding-top: 0.5rem;
+        padding-top: 2.5rem;
         padding-bottom: 0.5rem;
     }
     div[data-testid="stVerticalBlock"] > div {
