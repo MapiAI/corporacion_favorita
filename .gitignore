@@ -8,3 +8,10 @@ __pycache__/
 
 # MLflow (locale, machine-specific)
 mlflow.db
+
+# MLflow 
+mlruns/
+
+# macOS system files 
+.DS_Store 
+*/.DS_Store
