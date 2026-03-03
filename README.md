@@ -1,5 +1,10 @@
 # Corporación Favorita — Time Series Sales Forecasting
 
+[![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)](https://www.python.org/)
+[![Streamlit](https://img.shields.io/badge/Streamlit-1.x-red.svg)](https://streamlit.io/)
+[![MLflow](https://img.shields.io/badge/MLflow-Tracking-orange.svg)](https://mlflow.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
 A complete end‑to‑end time series forecasting project predicting daily unit sales for Corporación Favorita grocery stores. The workflow includes data preparation, feature engineering, model selection, experiment tracking, and deployment through two interactive Streamlit applications.
 
 ---
@@ -37,6 +42,7 @@ A complete end‑to‑end time series forecasting project predicting daily unit 
 corporacion_favorita/
 ├── requirements.txt                # Python dependencies
 ├── README.md
+├── LICENSE
 │ 
 ├── app/
 │   ├── __init__.py
