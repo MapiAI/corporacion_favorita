@@ -91,9 +91,11 @@ st.markdown(f"""
         <span style='font-size:26px; font-weight:300; color:#888;'>Sales Forecasting</span>
     </div>
 """, unsafe_allow_html=True)
+st.caption("🚀 Deployment Mode — forecast from any date")
 st.divider()
 
 # Sidebar 
+st.sidebar.markdown("**Mode:** 🚀 Deployment")
 st.sidebar.header("Forecast Settings")
 
 # Date picker — user selects the cutoff date
