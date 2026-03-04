@@ -101,7 +101,7 @@ st.divider()
 # Sidebar
 st.sidebar.markdown("**Mode:** 🔬 Validation")
 st.sidebar.header("Forecast Settings")
-n_days = st.slider(
+n_days = st.sidebar.slider(
     "Forecast horizon (days)",
     min_value=7,
     max_value=90,
