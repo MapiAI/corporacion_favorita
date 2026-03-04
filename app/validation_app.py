@@ -95,9 +95,11 @@ st.markdown(f"""
         <span style='font-size:26px; font-weight:300; color:#888;'>Sales Forecasting</span>
     </div>
 """, unsafe_allow_html=True)
+st.caption("🔬 Validation Mode — forecast evaluated against actual sales")
 st.divider()
 
 # Sidebar
+st.sidebar.markdown("**Mode:** 🔬 Validation")
 st.sidebar.header("Forecast Settings")
 n_days = st.sidebar.slider(
     label="Forecast horizon (days)",
