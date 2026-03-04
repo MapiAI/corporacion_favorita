@@ -104,6 +104,10 @@ cutoff_date = st.sidebar.date_input(
     max_value=df.index.max().date(),
     help="The model uses history up to this date. Forecast starts the following day."
 )
+if cutoff_date is None:
+    st.warning("Please select a valid date to continue.")
+    st.stop()
+
 cutoff_ts = pd.Timestamp(cutoff_date)
 
 # Forecast mode
