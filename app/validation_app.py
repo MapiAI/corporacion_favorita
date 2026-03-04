@@ -101,12 +101,12 @@ st.divider()
 # Sidebar
 st.sidebar.markdown("**Mode:** 🔬 Validation")
 st.sidebar.header("Forecast Settings")
-n_days = st.sidebar.slider(
-    label="Forecast horizon (days)",
+n_days = st.slider(
+    "Forecast horizon (days)",
     min_value=7,
     max_value=90,
     value=30,
-    step=1
+    help="Number of days to forecast. The model was evaluated on 90 days (Jan 1 → Mar 31 2014)."
 )
 st.sidebar.markdown("---")
 st.sidebar.markdown("**Model:** XGBoost (HyperOpt tuned)")
