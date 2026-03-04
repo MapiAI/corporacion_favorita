@@ -122,7 +122,8 @@ n_days = st.sidebar.slider(
     "N days",
     min_value=1,
     max_value=30,
-    value=7
+    value=7,
+    help="Number of days to forecast ahead. Longer horizons accumulate more uncertainty — each prediction feeds the next step."
 ) if mode == "Next N days" else 1
 
 st.sidebar.markdown("---")
