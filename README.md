@@ -43,6 +43,7 @@ A complete end‑to‑end time series forecasting project predicting daily unit 
 
 ```
 corporacion_favorita/
+│ 
 ├── requirements.txt                # Python dependencies
 ├── README.md
 ├── LICENSE
@@ -53,10 +54,10 @@ corporacion_favorita/
 │   ├── validation_app.py           # Validation app (forecast vs actuals, metrics)
 │   └── main.py                     # Deployment app (date picker, pure forecast)
 │ 
-├── model/
-│   ├── __init__.py
-│   └── model_utils.py              # Model loading and recursive forecasting
-│   └── champion_model.pkl          # Trained XGBoost champion model
+├── assets/
+│   ├── icon_favicon.png            # Browser favicon
+│   ├── forecast.png                # Forecast image
+│   └── historical.png              # Historical sales image
 │ 
 ├── data/
 │   ├── __init__.py
@@ -68,18 +69,18 @@ corporacion_favorita/
 │   ├── stores.csv                  # Store metadata
 │   └── results_statistical.csv     # Statistical models evaluation results
 │ 
-├── assets/
-│   ├── icon_favicon.png            # Browser favicon
-│   ├── forecast.png                # Forecast image
-│   └── historical.png              # Historical sales image
-│ 
-└── notebooks/
-│   ├── 01_favorita_sales_forecasting_data_preparation.ipynb
-│   ├── 02_statistical_models.ipynb
-│   └── 03_feature_engineering_models.ipynb
-│ 
 ├── docs/
 │   └── sales_forecasting_corporacion_favorita.pdf
+│ 
+├── model/
+│   ├── __init__.py
+│   └── model_utils.py              # Model loading and recursive forecasting
+│   └── champion_model.pkl          # Trained XGBoost champion model
+│ 
+└── notebooks/
+    ├── 01_favorita_sales_forecasting_data_preparation.ipynb
+    ├── 02_statistical_models.ipynb
+    └── 03_feature_engineering_models.ipynb
 ```
 
 ---
