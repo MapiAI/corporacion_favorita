@@ -22,7 +22,7 @@ A complete end‑to‑end time series forecasting project predicting daily unit 
 ## Application Overview
 
 ### Forecasting App (`app/main.py`)
-- Generates recursive multi‑day forecasts (7–90 days).
+- Generates single-day or recursive multi‑day forecasts (1–30 days)
 - Displays historical sales and future predictions.
 - Allows CSV export of forecast results.
 - Designed for real‑world deployment conditions where future values are not available.
