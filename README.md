@@ -34,6 +34,9 @@ A complete end‑to‑end time series forecasting project predicting daily unit 
 - Visualizes error distribution and forecast stability.
 - Provides model parameters and methodology in the sidebar.
 
+## Presentation
+[View Slides (PDF)](docs/SalesForecasting_CorporacionFavorita.pdf)
+
 ---
 
 ## Project Structure
