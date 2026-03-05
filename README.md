@@ -69,14 +69,17 @@ corporacion_favorita/
 │   └── results_statistical.csv     # Statistical models evaluation results
 │ 
 ├── assets/
-│   └── icon_favicon.png            # Browser favicon
-│   └── forecast.png                # Forecast image
+│   ├── icon_favicon.png            # Browser favicon
+│   ├── forecast.png                # Forecast image
 │   └── historical.png              # Historical sales image
 │ 
 └── notebooks/
-    ├── 01_favorita_sales_forecasting_data_preparation.ipynb
-    ├── 02_statistical_models.ipynb
-    └── 03_feature_engineering_models.ipynb
+│   ├── 01_favorita_sales_forecasting_data_preparation.ipynb
+│   ├── 02_statistical_models.ipynb
+│   └── 03_feature_engineering_models.ipynb
+│ 
+├── docs/
+│   └── sales_forecasting_corporacion_favorita.pdf
 ```
 
 ---
